@@ -7,6 +7,3 @@ endpoints:
     context: /
     service:
       port: 8000         # obligatoire pour la validation
-    expose:
-      - path: /register
-        public: true
