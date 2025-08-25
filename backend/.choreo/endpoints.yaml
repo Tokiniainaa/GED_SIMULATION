@@ -6,3 +6,6 @@ endpoints:
     type: REST 
     networkVisibility: Public
     context: /
+    expose:
+      - path: /register/
+        public: true
