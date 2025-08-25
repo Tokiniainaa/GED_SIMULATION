@@ -1,11 +1,11 @@
 version: 0.1
 
-endpoints:
+component:
   - name: "REST API"
     port: 8000
-    type: REST 
+    type: REST
     networkVisibility: Public
     context: /
     expose:
-      - path: /register/
+      - path: /register
         public: true
