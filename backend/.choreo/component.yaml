@@ -1,11 +1,12 @@
 schemaVersion: "1.2"
 
 endpoints:
-  - name: "REST API"
-    port: 8000
+  - name: rest_api       # tout en minuscules et underscore
     type: REST
     networkVisibility: Public
     context: /
+    service:
+      port: 8000         # obligatoire pour la validation
     expose:
       - path: /register
         public: true
